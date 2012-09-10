@@ -36,7 +36,7 @@ class ExampleCommand(CkanCommand):
 
         if cmd == 'create-example-vocabs':
             self.create_example_vocabs()
-        if cmd == 'clean':
+        elif cmd == 'clean':
             self.clean()
         else:
             log.error('Command "%s" not recognized' % (cmd,))
